@@ -101,12 +101,10 @@ footer {
 
 .cardInCart {
     width: 30%;
-    height: 80%;
     display: flex;
     margin-top: 3rem;
     align-items: center;
     border: 2px solid grey;
-    overflow: hidden;
     min-width: 500px;
 }
 
@@ -121,10 +119,46 @@ footer {
 }
 
 .info .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .cardInCart img {
     width: 50%;
     height: 100%;
+}
+
+.total {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.quantitydiv {
+    display: flex;
+    gap: 0.4rem;
+      justify-content: center;
+    align-items: center;
+}
+
+.quantitydiv input {
+    width: 50%;
+    font-size: 1.3rem;
+  
+}
+
+.quantitydiv button {
+    padding: 2px;
+    width: 10%;
+    text-align: center;
+}
+
+.Cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cart button {
+    width: 40%;
+    margin-top: 3rem;
 }

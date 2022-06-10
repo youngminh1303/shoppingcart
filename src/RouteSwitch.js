@@ -7,12 +7,13 @@ import Cart from "./Cart"
 const RouteSwitch = () => {
   let [counter, setCounter] = useState(0)
   let [items, setItems] = useState([])  
+  let [total, setTotal] = useState(0)
   return (
       <BrowserRouter>
           <Routes>
         <Route path="/" element={<App />}></Route>
-        <Route path="/shop" element={<Shop counter={counter} setCounter={setCounter} setItems={setItems} />}></Route>
-        <Route path="/cart" element={<Cart counter={counter} setCounter={setCounter} items={items}/>}></Route>
+        <Route path="/shop" element={<Shop counter={counter} setCounter={setCounter} setItems={setItems} total={total} setTotal={setTotal} />}></Route>
+        <Route path="/cart" element={<Cart counter={counter} setCounter={setCounter} items={items} total={total} setTotal={setTotal} setItems={setItems}/>}></Route>
         </Routes>
       </BrowserRouter>
   )

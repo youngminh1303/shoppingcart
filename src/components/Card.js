@@ -1,4 +1,4 @@
-const Card = ({ title, src, price, setCounter, setItems }) => {
+const Card = ({ title, src, price, setCounter, setItems, setTotal }) => {
     const checkItem = (prev, itemTitle) => {
       for (let i = 0; i < prev.length; i++) {
         if (prev[i].title === itemTitle) return i
@@ -11,9 +11,7 @@ const Card = ({ title, src, price, setCounter, setItems }) => {
 
 
     //increase counter
-    setCounter((prev) => {
-      setCounter(prev + 1)
-    })
+   
       
     //add to items
     setItems(prev => {
@@ -26,6 +24,9 @@ const Card = ({ title, src, price, setCounter, setItems }) => {
           price,
           quantity: 1
         }))
+         setCounter((prev) => {
+      setCounter(prev + 1)
+    })
         return
       }
 
