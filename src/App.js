@@ -6,7 +6,7 @@ function App() {
       <Navbar counter={0} showCounter={false}  />
       <section>
         <h1>Welcome to the waifu shop</h1>
-        <Link to='/shop'><button>Go Shopping Right Now!</button></Link>
+        <Link to='/shoppingcart/shop'><button>Go Shopping Right Now!</button></Link>
       </section>
     </div>
   );

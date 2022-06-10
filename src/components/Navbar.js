@@ -7,13 +7,13 @@ const Navbar = ({ counter, showCounter }) => {
       <img src={logo} alt="logo"></img>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/shoppingcart">Home</Link>
         </li>
         <li>
-          <Link to="/shop">Shop</Link>
+          <Link to="/shoppingcart/shop">Shop</Link>
         </li>
         <li>
-          <Link to="/cart">Cart</Link>
+          <Link to="/shoppingcart/cart">Cart</Link>
         </li>
         {showCounter && <li>{counter}</li>}
       </ul>
