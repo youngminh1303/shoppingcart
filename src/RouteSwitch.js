@@ -9,7 +9,7 @@ const RouteSwitch = () => {
   let [items, setItems] = useState([])  
   let [total, setTotal] = useState(0)
   return (
-      <BrowserRouter>
+      <BrowserRouter basename="/">
           <Routes>
         <Route path="/" element={<App />}></Route>
         <Route path="/shop" element={<Shop counter={counter} setCounter={setCounter} setItems={setItems} total={total} setTotal={setTotal} />}></Route>
