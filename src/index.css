@@ -1,4 +1,92 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Ubuntu', Times, serif;
+}
+
+section {
+    width: 100%;
+    background-image: url(./background.png);
+    height: 95vh;
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 0;
+     color: rgb(0, 179, 255);
+     background-color: rgb(233, 233, 233);
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+button:active {
+    background-color: grey;
+}
+
+section h1 {
+    font-size: 4rem;
+    color: rgb(0, 179, 255);
+    background-color: white;
+}
+
+#shop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 3rem;
+
+}
+
+.addToCart {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid gray;
+    border-radius: 5px;
+    height: 100%;
+    gap: 1.5rem;
+    padding: 0.3rem;
+    font-size: 1.5rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 3rem;
+      color: rgb(0, 179, 255);
+    background-color: white;
+    
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    height: max-content;
+    background-color: whitesmoke;
+    padding: 1rem;
 }
