@@ -10,9 +10,9 @@ const RouteSwitch = () => {
   return (
       <BrowserRouter>
           <Routes>
-        <Route path="/" element={<App counter={counter} setCounter={setCounter} items={items} setItems={setItems}/>}></Route>
-        <Route path="/shop" element={<Shop counter={counter} setCounter={setCounter} items={items} setItems={setItems} />}></Route>
-        <Route path="/cart" element={<Cart counter={counter} setCounter={setCounter} items={items} setItems={setItems}/>}></Route>
+        <Route path="/" element={<App />}></Route>
+        <Route path="/shop" element={<Shop counter={counter} setCounter={setCounter} setItems={setItems} />}></Route>
+        <Route path="/cart" element={<Cart counter={counter} setCounter={setCounter} items={items}/>}></Route>
         </Routes>
       </BrowserRouter>
   )

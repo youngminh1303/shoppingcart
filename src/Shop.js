@@ -8,7 +8,7 @@ import yukino from "./waifus/yukino.jpg"
 import rikka from "./waifus/rikkatakanashi.png"
 import zerotwo from "./waifus/zerotwo.png"
 
-const Shop = ({counter, setCounter, items, setItems}) => {
+const Shop = ({counter, setCounter, setItems}) => {
   return (
       
         <div className="Shop">

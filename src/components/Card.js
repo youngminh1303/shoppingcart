@@ -27,11 +27,14 @@ const Card = ({ title, src, price, setCounter, setItems }) => {
         return
       }
 
+
       copiedItems.splice(itemIndex, 1, { ...prev[itemIndex], quantity: prev[itemIndex].quantity++ })
-      console.log(copiedItems)
       setItems(copiedItems)
+      console.log(copiedItems)
     })    
   }
+
+  
   return (
       <div className="card">
           <img src={src} alt=''/>

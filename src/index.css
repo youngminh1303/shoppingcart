@@ -90,3 +90,36 @@ footer {
     background-color: whitesmoke;
     padding: 1rem;
 }
+
+.cardsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cardInCart {
+    width: 50%;
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.info .title {
+    font-size: 2rem;
+}
+
+.cardInCart img {
+    width: 50%;
+}
