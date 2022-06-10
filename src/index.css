@@ -92,28 +92,32 @@ footer {
 }
 
 .cardsection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     align-items: center;
     width: 100%;
 }
 
 .cardInCart {
-    width: 50%;
+    width: 30%;
+    height: 80%;
     display: flex;
     margin-top: 3rem;
     align-items: center;
-
+    border: 2px solid grey;
+    overflow: hidden;
+    min-width: 500px;
 }
 
 .info {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     margin-left: 1rem;
+    width: 50%;
 }
 
 .info .title {
@@ -122,4 +126,5 @@ footer {
 
 .cardInCart img {
     width: 50%;
+    height: 100%;
 }

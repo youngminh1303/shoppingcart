@@ -1,18 +1,20 @@
 const Card = ({ title, src, price, setCounter, setItems }) => {
-
-  const addToCart = () => {
-    //Check if the item already exists or not
     const checkItem = (prev, itemTitle) => {
       for (let i = 0; i < prev.length; i++) {
-        if(prev[i].title === itemTitle) return i
+        if (prev[i].title === itemTitle) return i
       }
       return -1;
     }
+  
+    const addToCart = () => {
+    //Check if the item already exists or not
+
 
     //increase counter
     setCounter((prev) => {
       setCounter(prev + 1)
     })
+      
     //add to items
     setItems(prev => {
       let copiedItems = [...prev]
@@ -27,10 +29,8 @@ const Card = ({ title, src, price, setCounter, setItems }) => {
         return
       }
 
-
       copiedItems.splice(itemIndex, 1, { ...prev[itemIndex], quantity: prev[itemIndex].quantity++ })
-      setItems(copiedItems)
-      console.log(copiedItems)
+      setItems([...copiedItems])
     })    
   }
 

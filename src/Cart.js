@@ -8,8 +8,9 @@ const Cart = ({ counter, items }) => {
 
 
   useEffect(() => {
+
     items.forEach(element => {
-      setItemList(prev => setItemList([...prev].concat(<CardinCart key={element.src} item={element} />)))
+      setItemList(prev => [...prev].concat(<CardinCart key={element.src} item={element} />))
     });
   }, [items])
   
